@@ -1,14 +1,14 @@
-rsvltsmedia
+pompedesan
 ===
 
 ## Clone and go!
 
-    git clone git@git.presslabs.net:rsvltsmedia.git
-    cd rsvltsmedia
+    git clone git@git.presslabs.net:pompedesan.git
+    cd pompedesan
     git submodule update --init
     vagrant up
 
-Point your browser at [http://rsvltsmedia.local](http://rsvltsmedia.local).
+Point your browser at [http://pompedesan.local](http://pompedesan.local).
 
 ## Requirements
 
