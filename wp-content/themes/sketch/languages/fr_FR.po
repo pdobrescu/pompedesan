@@ -1,14 +1,28 @@
-# Translation of Sketch in French (France)
-# This file is distributed under the same license as the Sketch package.
+# Translation of WordPress.com - Themes - Sketch in French (France)
+# This file is distributed under the same license as the WordPress.com - Themes - Sketch package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-05-25 08:13:38+0000\n"
+"PO-Revision-Date: 2017-03-23 09:01:54+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: GlotPress/1.0-alpha-1100\n"
-"Project-Id-Version: Sketch\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: fr\n"
+"Project-Id-Version: WordPress.com - Themes - Sketch\n"
+
+#: inc/wpcom-colors.php:24
+msgid "Main Accent"
+msgstr "Accent Principal"
+
+#: inc/jetpack.php:141
+msgid "Older projects"
+msgstr "Projets suivants"
+
+#. Author of the plugin/theme
+#: wp-content/themes/pub/sketch/style.css
+msgid "Automattic"
+msgstr "Automattic"
 
 #. Template Name of the plugin/theme
 #: wp-content/themes/pub/sketch/portfolio-page.php
@@ -70,51 +84,51 @@ msgstr "Navigation des articles"
 msgid "Page %s"
 msgstr "Page %s"
 
-#: inc/customizer.php:34
+#: inc/customizer.php:29
 msgid "Portrait (3:4)"
 msgstr "Portrait (3:4)"
 
-#: inc/customizer.php:45
+#: inc/customizer.php:40
 msgid "Hide title and content on Portfolio Page Template"
 msgstr "Masquer le titre et le contenu sur le modèle de page du portefeuille"
 
-#: inc/customizer.php:35
+#: inc/customizer.php:30
 msgid "Square (1:1)"
 msgstr "Carré (1:1)"
 
-#: inc/customizer.php:33
+#: inc/customizer.php:28
 msgid "Landscape (4:3)"
 msgstr "Paysage (4:3)"
 
-#: inc/customizer.php:19
-msgid "Theme"
-msgstr "Thème"
+#: inc/customizer.php:24
+msgid "Portfolio Thumbnail Aspect Ratio"
+msgstr "Aspect des vignettes de portfolio"
 
-#: header.php:32
+#: header.php:31
 msgid "Menu"
 msgstr "Menu"
 
-#: header.php:23
+#: header.php:22
 msgid "Skip to content"
 msgstr "Aller au contenu principal"
 
 #. Translators: If there are characters in your language that are not
 #. * supported by Lato, translate this to 'off'. Do not translate
 #. * into your own language.
-#: functions.php:157
+#: functions.php:165
 msgctxt "Lato font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:67
+#: functions.php:75
 msgid "Social Links"
 msgstr "Liens Sociaux"
 
-#: functions.php:108
+#: functions.php:116
 msgid "Sidebar"
 msgstr "Colonne latérale"
 
-#: functions.php:66
+#: functions.php:74
 msgid "Primary Menu"
 msgstr "Menu principal"
 
@@ -268,10 +282,6 @@ msgstr "Jour: %s"
 #: archive.php:27
 msgid "Author: %s"
 msgstr "Auteur : %s"
-
-#: archive-jetpack-portfolio.php:19
-msgid "Portfolio"
-msgstr "Portfolio"
 
 #: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."

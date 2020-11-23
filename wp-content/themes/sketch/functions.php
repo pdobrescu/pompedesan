@@ -48,6 +48,14 @@ function sketch_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	/*
+	 * Let WordPress manage the document title.
+	 * By adding theme support, we declare that this theme does not use a
+	 * hard-coded <title> tag in the document head, and expect WordPress to
+	 * provide it for us.
+	 */
+	add_theme_support( 'title-tag' );
+
+	/*
 	 * Enable support for Post Thumbnails on posts and pages.
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
@@ -123,7 +131,7 @@ function sketch_scripts() {
 	wp_enqueue_style( 'sketch-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'sketch-lato', sketch_fonts_url(), array(), null );
 
-	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.3' );
+	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.4.1' );
 
 	if ( sketch_has_featured_posts( 2 ) && is_page_template( 'portfolio-page.php' ) ) {
 		wp_enqueue_script( 'sketch-flexslider', get_template_directory_uri() . '/js/jquery.flexslider.js', array( 'jquery' ), '20150811', true );
@@ -234,3 +242,6 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+

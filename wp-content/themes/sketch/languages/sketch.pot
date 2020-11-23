@@ -1,14 +1,14 @@
-# Copyright (C) 2015 WordPress.com
+# Copyright (C) 2017 Automattic
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Sketch 1.1.5\n"
+"Project-Id-Version: Sketch 1.2.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/sketch\n"
-"POT-Creation-Date: 2015-08-01 03:50:33+00:00\n"
+"POT-Creation-Date: 2017-03-23 09:01:50+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
@@ -18,10 +18,6 @@ msgstr ""
 
 #: 404.php:19
 msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr ""
-
-#: archive-jetpack-portfolio.php:19
-msgid "Portfolio"
 msgstr ""
 
 #: archive.php:27
@@ -188,60 +184,60 @@ msgstr ""
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: functions.php:66
+#: functions.php:74
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:67
+#: functions.php:75
 msgid "Social Links"
 msgstr ""
 
-#: functions.php:108
+#: functions.php:116
 msgid "Sidebar"
 msgstr ""
 
 #. Translators: If there are characters in your language that are not
 #. 	 * supported by Lato, translate this to 'off'. Do not translate
 #. 	 * into your own language.
-#: functions.php:157
+#: functions.php:165
 msgctxt "Lato font: on or off"
 msgid "on"
 msgstr ""
 
-#: header.php:23
+#: header.php:22
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:32
+#: header.php:31
 msgid "Menu"
 msgstr ""
 
-#: inc/customizer.php:19
-msgid "Theme"
-msgstr ""
-
-#: inc/customizer.php:29
+#: inc/customizer.php:24
 msgid "Portfolio Thumbnail Aspect Ratio"
 msgstr ""
 
-#: inc/customizer.php:33
+#: inc/customizer.php:28
 msgid "Landscape (4:3)"
 msgstr ""
 
-#: inc/customizer.php:34
+#: inc/customizer.php:29
 msgid "Portrait (3:4)"
 msgstr ""
 
-#: inc/customizer.php:35
+#: inc/customizer.php:30
 msgid "Square (1:1)"
 msgstr ""
 
-#: inc/customizer.php:45
+#: inc/customizer.php:40
 msgid "Hide title and content on Portfolio Page Template"
 msgstr ""
 
 #: inc/extras.php:71
 msgid "Page %s"
+msgstr ""
+
+#: inc/jetpack.php:141
+msgid "Older projects"
 msgstr ""
 
 #: inc/template-tags.php:27
@@ -284,6 +280,10 @@ msgstr ""
 msgid "All %s posts"
 msgstr ""
 
+#: inc/wpcom-colors.php:24
+msgid "Main Accent"
+msgstr ""
+
 #: portfolio-page.php:84
 msgid "No Project Found"
 msgstr ""
@@ -316,7 +316,7 @@ msgstr ""
 
 #. Author of the plugin/theme
 #: wp-content/themes/pub/sketch/style.css
-msgid "WordPress.com"
+msgid "Automattic"
 msgstr ""
 
 #. Author URI of the plugin/theme

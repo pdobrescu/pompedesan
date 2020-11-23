@@ -1,15 +1,19 @@
-# Translation of WordPress.com - Themes - Sketch in Finnish
+# Translation of WordPress.com - Themes - Sketch in Polish
 # This file is distributed under the same license as the WordPress.com - Themes - Sketch package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-03-14 16:33:50+0000\n"
+"PO-Revision-Date: 2017-12-23 19:51:21+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.1.0-alpha\n"
-"Language: fi\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: pl\n"
 "Project-Id-Version: WordPress.com - Themes - Sketch\n"
+
+#: inc/jetpack.php:141
+msgid "Older projects"
+msgstr "Starsze projekty"
 
 #. Author of the plugin/theme
 #: wp-content/themes/pub/sketch/style.css
@@ -19,112 +23,100 @@ msgstr "Automattic"
 #. Template Name of the plugin/theme
 #: wp-content/themes/pub/sketch/fullwidth-page.php
 msgid "Full Width, No Sidebar"
-msgstr "Täysi leveys ilman sivupalkkia"
+msgstr "Pełna szerokość, brak panelu bocznego"
 
 #. Template Name of the plugin/theme
 #: wp-content/themes/pub/sketch/portfolio-page.php
 msgid "Portfolio Page Template"
-msgstr "Portfolio (sivupohja)"
+msgstr "Szablon strony Portfolio"
 
 #: search.php:16
 msgid "Search Results for: %s"
-msgstr "Hakutulokset kohteelle: %s"
+msgstr "Wyniki wyszukiwania dla zapytania &#8222;%s&#8221;"
 
 #: inc/template-tags.php:217
 msgid "All %s posts"
-msgstr "Kaikki kirjoittajan %s artikkelit"
+msgstr "Wszystkie posty typu %s"
 
 #: portfolio-page.php:84
 msgid "No Project Found"
-msgstr "Projekteja ei löytynyt"
+msgstr "Nie znaleziono żadnego projektu"
 
 #: portfolio-page.php:90
 msgid "Ready to publish your first project? <a href=\"%1$s\">Get started here</a>."
-msgstr "Oletko valmis julkaisemaan ensimmäisen kirjoituksesi? <a href=\\\"%1$s\\\">Aloita tästä</a>."
+msgstr "Gotowy do opublikowania pierwszego projektu? <a href=\"%1$s\">Zacznij tutaj</a>."
 
 #: inc/template-tags.php:173
 msgid "More Projects"
-msgstr "Lisää projekteja"
-
-#: inc/template-tags.php:31
-msgid "<span class=\"meta-nav\">Previous</span>"
-msgstr "<span class=\"meta-nav\">Edellinen</span>"
-
-#: inc/template-tags.php:35
-msgid "<span class=\"meta-nav\">Next</span>"
-msgstr "<span class=\"meta-nav\">Seuraava</span>"
+msgstr "Więcej projektów"
 
 #: inc/template-tags.php:58
 msgid "Post navigation"
-msgstr "Artikkelien selaus"
+msgstr "Zobacz wpisy"
+
+#: inc/template-tags.php:31
+msgid "<span class=\"meta-nav\">Previous</span>"
+msgstr "<span class=\"meta-nav\">Poprzedni</span>"
+
+#: inc/template-tags.php:35
+msgid "<span class=\"meta-nav\">Next</span>"
+msgstr "<span class=\"meta-nav\">Następny</span>"
 
 #: inc/template-tags.php:27
 msgid "Posts navigation"
-msgstr "Artikkelien selaus"
+msgstr "Nawigacja po wpisach"
 
 #: inc/extras.php:71
 msgid "Page %s"
-msgstr "Sivu %s"
+msgstr "Strona %s."
+
+#: inc/customizer.php:28
+msgid "Landscape (4:3)"
+msgstr "Panoramiczny (4:3)"
+
+#: inc/customizer.php:30
+msgid "Square (1:1)"
+msgstr "Kwadrat (1:1)"
 
 #: inc/customizer.php:29
-msgid "Portfolio Thumbnail Aspect Ratio"
-msgstr "Portfolion pikkukuvan kuvasuhde"
-
-#: inc/customizer.php:33
-msgid "Landscape (4:3)"
-msgstr "Vaakasuuntainen (4:3)"
-
-#: inc/customizer.php:34
 msgid "Portrait (3:4)"
-msgstr "Pystysuuntainen (3:4)"
+msgstr "Portretowy (3:4)"
 
-#: inc/customizer.php:35
-msgid "Square (1:1)"
-msgstr "Neliö (1:1)"
-
-#: inc/customizer.php:45
-msgid "Hide title and content on Portfolio Page Template"
-msgstr "Neliö (1:1)"
-
-#: inc/customizer.php:19
-msgid "Theme"
-msgstr "Teema"
-
-#: header.php:32
+#: header.php:31
 msgid "Menu"
-msgstr "Valikko"
+msgstr "Menu"
 
-#: header.php:23
+#: header.php:22
 msgid "Skip to content"
-msgstr "Siirry sisältöön"
+msgstr "Przeskocz do treści"
 
 #. Translators: If there are characters in your language that are not
 #. * supported by Lato, translate this to 'off'. Do not translate
 #. * into your own language.
-#: functions.php:157
+#: functions.php:165
 msgctxt "Lato font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:108
+#: functions.php:116
 msgid "Sidebar"
-msgstr "Sivupalkki"
+msgstr "Panel boczny"
 
-#: functions.php:67
+#: functions.php:75
 msgid "Social Links"
-msgstr "Some-linkit"
+msgstr "Łącza społecznościowe"
 
-#: functions.php:66
+#: functions.php:74
 msgid "Primary Menu"
-msgstr "Ensisijainen valikko"
+msgstr "Menu główne"
 
 #: footer.php:17
 msgid "Theme: %1$s by %2$s."
-msgstr "Teema: %1$s tekijä %2$s."
+msgstr "Motyw: %1$s. Autor motywu: %2$s."
 
 #: footer.php:15
 msgid "Proudly powered by %s"
-msgstr "Voimanlähteenä %s"
+msgstr "Dumnie wspierane przez WordPressa"
 
 #: footer.php:15
 msgid "http://wordpress.org/"
@@ -132,7 +124,7 @@ msgstr "http://wordpress.org/"
 
 #: content-single.php:35
 msgid "Posted in %1$s"
-msgstr "Kategoriassa %1$s"
+msgstr "Zamieszczone w %1$s"
 
 #. translators: used between list items, there is a space after the comma
 #: content-single.php:31
@@ -141,15 +133,15 @@ msgstr ", "
 
 #: content-portfolio-single.php:38
 msgid "% Comments"
-msgstr "% kommenttia"
+msgstr "% komentarzy"
 
 #: content-portfolio-single.php:38
 msgid "1 Comment"
-msgstr "1 kommentti"
+msgstr "1 komentarz"
 
 #: content-portfolio-single.php:38
 msgid "Leave a comment"
-msgstr "Jätä kommentti"
+msgstr "Dodaj komentarz"
 
 #: content-portfolio-single.php:16
 msgctxt "Used between list items, there is a space after the comma."
@@ -158,90 +150,99 @@ msgstr ", "
 
 #: content-portfolio-single.php:23 content.php:33
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Lue loppuun <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Czytaj dalej <span class=\"meta-nav\">&rarr;</span>"
 
 #: content-page.php:18 content-portfolio-single.php:26 content-single.php:22
 #: content.php:36 portfolio-page.php:28
 msgid "Pages:"
-msgstr "Sivut:"
+msgstr "Strony:"
 
 #: content-none.php:28 portfolio-page.php:94
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta on apua."
+msgstr "Nie udało się znaleźć tego, czego szukasz. Być może wyszukiwanie przyniesie lepsze rezultaty."
 
 #: content-none.php:23
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Pahoittelut mutta mitään ei löytynyt hakuehdoillasi. Kokeile uudelleen joillakin toisilla hakusanoilla."
+msgstr "Przykro nam, ale nie znaleziono niczego na podstawie wpisanych terminów. Spróbuj ponownie używając innych słów kluczowych."
 
 #: content-none.php:19
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Oletko valmis julkaisemaan ensimmäisen kirjoituksesi? <a href=\"%1$s\">Aloita tästä</a>."
+msgstr "Gotowy do publikacji swojego pierwszego postu? <a href=\"%1$s\">Zacznij tutaj</a>."
 
 #: content-none.php:13
 msgid "Nothing Found"
-msgstr "Mitään ei löytynyt"
+msgstr "Niczego nie znaleziono"
 
 #: content-featured.php:32 content-page.php:24 content-portfolio-single.php:18
 #: content-portfolio.php:17 content-single.php:14 content.php:24
 #: eventbrite/eventbrite-index.php:44 eventbrite/eventbrite-single.php:31
 #: portfolio-page.php:34
 msgid "Edit"
-msgstr "Muokkaa"
+msgstr "Edytuj"
 
 #: comments.php:65
 msgid "Comments are closed."
-msgstr "Kommentointi on suljettu."
+msgstr "Możliwość komentowania jest wyłączona."
+
+#: comments.php:36 comments.php:54
+msgid "< Older Comments"
+msgstr "< Starsze Komentarze"
+
+#: comments.php:37 comments.php:55
+msgid "Newer Comments >"
+msgstr "Nowsze Komentarze >"
 
 #: comments.php:35 comments.php:53
 msgid "Comment navigation"
-msgstr "Kommenttien selaus"
+msgstr "Nawigacja po komentarzach"
 
 #: comments.php:28
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Yksi kommentti artikkeliin &rdquo;%2$s&rdquo;"
-msgstr[1] "%1$s kommenttia artikkeliin &rdquo;%2$s&rdquo;"
+msgstr[0] "Jedna uwaga do wpisu &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s uwagi do wpisu &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s uwag do wpisu &ldquo;%2$s&rdquo;"
 
 #: archive.php:66
 msgid "Archives"
-msgstr "Arkistot"
+msgstr "Archiwum"
 
 #: archive.php:63
 msgid "Chats"
-msgstr "Keskustelut"
+msgstr "Konwersacje"
 
 #: archive.php:60
 msgid "Audios"
-msgstr "Äänet"
+msgstr "Dźwięki"
 
 #: archive.php:57
 msgid "Statuses"
-msgstr "Tilat"
+msgstr "Stany"
 
 #: archive.php:54
 msgid "Links"
-msgstr "Linkit"
+msgstr "Linki"
 
 #: archive.php:51
 msgid "Quotes"
-msgstr "Lainaukset"
+msgstr "Cytaty"
 
 #: archive.php:48
 msgid "Videos"
-msgstr "Videot"
+msgstr "Filmy"
 
 #: archive.php:45
 msgid "Images"
-msgstr "Kuvat"
+msgstr "Obrazki"
 
 #: archive.php:42
 msgid "Galleries"
-msgstr "Galleriat"
+msgstr "Galerie"
 
 #: archive.php:39
 msgid "Asides"
-msgstr "Sivuhuomautukset"
+msgstr "Treści poboczne"
 
 #: archive.php:36
 msgctxt "yearly archives date format"
@@ -250,7 +251,7 @@ msgstr "Y"
 
 #: archive.php:36
 msgid "Year: %s"
-msgstr "Vuosi: %s"
+msgstr "Rok: %s"
 
 #: archive.php:33
 msgctxt "monthly archives date format"
@@ -259,24 +260,20 @@ msgstr "F Y"
 
 #: archive.php:33
 msgid "Month: %s"
-msgstr "Kuukausi: %s"
+msgstr "Miesiąc: %s"
 
 #: archive.php:30
 msgid "Day: %s"
-msgstr "Päivä: %s"
+msgstr "Dzień: %s"
 
 #: archive.php:27
 msgid "Author: %s"
-msgstr "Kirjoittaja: %s"
-
-#: archive-jetpack-portfolio.php:19
-msgid "Portfolio"
-msgstr "Portfolio"
+msgstr "Autor: %s"
 
 #: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "Ups! Tätä sivua ei löydy."
+msgstr "Ojej! Nie można znaleźć tej strony."
 
 #: 404.php:19
 msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "Näyttää siltä että täällä ei ole mitään. Kokeilepa hakua?"
+msgstr "Wygląda na to, że nic nie znaleziono w tej lokalizacji. Może spróbuj użyć wyszukiwarki?"

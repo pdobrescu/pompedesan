@@ -15,11 +15,6 @@ function sketch_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
-	$wp_customize->add_section( 'sketch_theme_options', array(
-		'title'    => __( 'Theme', 'sketch' ),
-		'priority' => 130,
-	) );
-
 	$wp_customize->add_setting( 'sketch_portfolio_thumbnail', array(
 		'default'           => 'landscape',
 		'sanitize_callback' => 'sketch_sanitize_ratio',
@@ -27,7 +22,7 @@ function sketch_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( 'sketch_portfolio_thumbnail', array(
 		'label'   => __( 'Portfolio Thumbnail Aspect Ratio', 'sketch' ),
-		'section' => 'sketch_theme_options',
+		'section' => 'jetpack_portfolio',
 		'type'    => 'select',
 		'choices' => array(
 			'landscape' => __( 'Landscape (4:3)', 'sketch' ),
@@ -43,7 +38,7 @@ function sketch_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( 'sketch_hide_portfolio_page_content', array(
 		'label'   => __( 'Hide title and content on Portfolio Page Template', 'sketch' ),
-		'section' => 'sketch_theme_options',
+		'section' => 'jetpack_portfolio',
 		'type'    => 'checkbox',
 	) );
 }

@@ -1,8 +1,6 @@
 <?php
 /**
- * The template for displaying Archive pages for Portfolio items.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ * The template for displaying the Portfolio archive page.
  *
  * @package Sketch
  */
@@ -14,11 +12,11 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php _e( 'Portfolio', 'sketch' ); ?>
-				</h1>
-			</header><!-- .page-header -->
+			<?php sketch_portfolio_title( '<header class="page-header"><h1 class="page-title">', '</h1></header>' ); ?>
+
+			<?php sketch_portfolio_featured_image( '<div class="portfolio-featured-image">', '</div>' ); ?>
+
+			<?php sketch_portfolio_content( '<div class="portfolio-entry-content">', '</div>' ); ?>
 
 			<?php /* Start the Loop */ ?>
 

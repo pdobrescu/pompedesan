@@ -1,23 +1,15 @@
-/* Theme Name: Sketch
- * Theme URI: https://wordpress.com/themes/sketch/
- * Author: WordPress.com
- * Author URI: https://wordpress.com/themes/
- * Description: A clean, responsive portfolio theme with options for a custom site logo, a featured content slider, and lots of room to share your work.
- * Version: 1.1.5
- * License: GNU General Public License v2 or later
- * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: sketch
- * Tags: one-column, two-columns, right-sidebar, full-width-template, rtl-language-support, theme-options, translation-ready, fixed-layout, responsive-layout, featured-images
- *
- * This theme, like WordPress, is licensed under the GPL.
- * Use it to make something cool, have fun, and share what you've learned with others.
- *
- * Sketch is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
- *
- * Resetting and rebuilding styles have been helped along thanks to the fine work of
- * Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
- * along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
- * and Blueprint http://www.blueprintcss.org/ */
+/*
+Theme Name: Sketch
+Theme URI: https://wordpress.com/themes/sketch/
+Description: A clean, responsive portfolio theme with options for a custom site logo, a featured content slider, and lots of room to share your work.
+Version: 1.2.4
+Author: Automattic
+Author URI: https://wordpress.com/themes/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: sketch
+Tags: featured-images, full-width-template, grid-layout, one-column, photography, portfolio, right-sidebar, rtl-language-support, theme-options, translation-ready, two-columns
+*/
 
 /* =Reset
 -------------------------------------------------------------- */
@@ -462,6 +454,7 @@ textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px;
+  -webkit-appearance: none;
 }
 
 input[type="text"]:focus,
@@ -499,8 +492,13 @@ html {
   line-height: 1.7em;
 }
 
-.menu-toggle:before, .format-link .entry-title a:after, .social-links ul a:before, .flex-direction-nav a:before {
+.menu-toggle:before,
+.format-link .entry-title a:after,
+.social-links ul a:before,
+.flex-direction-nav a:before {
+  text-rendering: auto;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-family: "Genericons";
   font-size: 24px;
   font-style: normal;
@@ -918,7 +916,7 @@ a:hover, a:focus, a:active {
   margin: 0 0 27px;
   padding: 0 0 24px;
   position: relative;
-  z-index: 999;
+  z-index: 5;
 }
 .site-logo {
   display: inline-block;
@@ -940,7 +938,7 @@ a:hover, a:focus, a:active {
   margin-bottom: 14px;
   max-width: 60%;
   position: relative;
-  z-index: 9999;
+  z-index: 5;
 }
 
 .site-title {
@@ -1023,11 +1021,14 @@ a:hover, a:focus, a:active {
   padding: 5px 7px;
   position: relative;
 }
+
 .menu-toggle:before {
   content: "\f419";
+  display: inline-block;
   font-size: 16px;
   margin-right: 5px;
-  vertical-align: text-bottom;
+  padding-bottom: 2px;
+  vertical-align: middle;
 }
 
 .toggled .menu-toggle {
@@ -1187,6 +1188,7 @@ body[class*="jetpack-portfolio"] .site-main,
   float: none;
   margin: 0 auto;
 }
+.portfolio-featured-image img,
 .single-jetpack-portfolio .entry-thumbnail img {
   display: block;
   margin: 0 auto 27px;
@@ -1348,6 +1350,9 @@ body[class*="jetpack-portfolio"].archive .entry-meta {
   letter-spacing: 1px;
   margin: 14px 0;
   text-align: center;
+}
+.portfolio-entry-content {
+	margin: 0 0 27px;
 }
 
 .page-template-portfolio-page-php .flexslider .jetpack-portfolio:hover,
@@ -1943,54 +1948,84 @@ div.sharedaddy div.sd-block {
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-.social-links ul a[href*="wordpress.org"]:before,
-.social-links ul a[href*="wordpress.com"]:before {
-  content: "\f205";
+.social-links ul a[href*='wordpress.org']:before,
+.social-links ul a[href*='wordpress.com']:before {
+    content: '\f205';
 }
-.social-links ul a[href*="facebook.com"]:before {
-  content: "\f204";
+.social-links ul a[href*='facebook.com']:before {
+    content: '\f204';
 }
-.social-links ul a[href*="twitter.com"]:before {
-  content: "\f202";
+.social-links ul a[href*='twitter.com']:before {
+    content: '\f202';
 }
-.social-links ul a[href*="dribbble.com"]:before {
-  content: "\f201";
+.social-links ul a[href*='dribbble.com']:before {
+    content: '\f201';
 }
-.social-links ul a[href*="plus.google.com"]:before {
-  content: "\f206";
+.social-links ul a[href*='plus.google.com']:before {
+    content: '\f206';
 }
-.social-links ul a[href*="pinterest.com"]:before {
-  content: "\f209";
+.social-links ul a[href*='pinterest.com']:before {
+    content: '\f209';
 }
-.social-links ul a[href*="github.com"]:before {
-  content: "\f200";
+.social-links ul a[href*='github.com']:before {
+    content: '\f200';
 }
-.social-links ul a[href*="tumblr.com"]:before {
-  content: "\f214";
+.social-links ul a[href*='tumblr.com']:before {
+    content: '\f214';
 }
-.social-links ul a[href*="youtube.com"]:before {
-  content: "\f213";
+.social-links ul a[href*='youtube.com']:before {
+    content: '\f213';
 }
-.social-links ul a[href*="flickr.com"]:before {
-  content: "\f211";
+.social-links ul a[href*='flickr.com']:before {
+    content: '\f211';
 }
-.social-links ul a[href*="vimeo.com"]:before {
-  content: "\f212";
+.social-links ul a[href*='vimeo.com']:before {
+    content: '\f212';
 }
-.social-links ul a[href*="instagram.com"]:before {
-  content: "\f215";
+.social-links ul a[href*='instagram.com']:before {
+    content: '\f215';
 }
-.social-links ul a[href*="codepen.io"]:before {
-  content: "\f216";
+.social-links ul a[href*='codepen.io']:before {
+    content: '\f216';
 }
-.social-links ul a[href*="linkedin.com"]:before {
-  content: "\f207";
+.social-links ul a[href*='linkedin.com']:before {
+    content: '\f207';
 }
-.social-links ul a[href*="/feed"]:before {
-  content: "\f413";
+.social-links ul a[href*='foursquare.com']:before {
+    content: '\f226';
 }
-.social-links ul a[href*="mailto"]:before {
-  content: "\f410";
+.social-links ul a[href*='reddit.com']:before {
+    content: '\f222';
+}
+.social-links ul a[href*='digg.com']:before {
+    content: '\f221';
+}
+.social-links ul a[href*='getpocket.com']:before {
+    content: '\f224';
+}
+.social-links ul a[href*='path.com']:before {
+    content: '\f219';
+}
+.social-links ul a[href*='stumbleupon.com']:before {
+    content: '\f223';
+}
+.social-links ul a[href*='spotify.com']:before {
+    content: '\f515';
+}
+.social-links ul a[href*='twitch.tv']:before {
+    content: '\f516';
+}
+.social-links ul a[href*='dropbox.com']:before {
+    content: '\f225';
+}
+.social-links ul a[href*='/feed']:before {
+    content: '\f413';
+}
+.social-links ul a[href*='skype']:before {
+    content: '\f220';
+}
+.social-links ul a[href*='mailto']:before {
+    content: '\f410';
 }
 
 .flexslider .hentry {
@@ -2478,7 +2513,7 @@ div.sharedaddy div.sd-block {
     opacity: 0;
     padding: 0 7px;
     position: absolute;
-    top: 27px;
+    top: 100%;
     left: 0;
     text-align: left;
     visibility: hidden;

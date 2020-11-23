@@ -1,13 +1,10 @@
 === Sketch ===
 Contributors: automattic
-Donate link:
-Tags: art, photography, portfolio, clean, minimal, one-column, two-columns, right-sidebar, full-width-template, rtl-language-support, theme-options, translation-ready, artwork, photoblogging, post-slider, infinite-scroll, fixed-layout, responsive-layout, site-logo
-Tested up to: 4.0
-Stable tag: 3.7
+Tested up to: 4.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Sketch is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+Sketch is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 
 == Description ==
 
@@ -15,10 +12,10 @@ A clean, responsive portfolio theme with options for a custom site logo, a featu
 
 == Bundled Licenses ==
 
-* Photographs depicted in screenshot.png are from Unsplash.com and licensed under Creative Commons Zero. Source: http://unsplash.com/legal-stuff
+* Images on demo and screenshot: images by Caroline Moore (https://calobeedoodles.com), licensed under [CC0](http://creativecommons.org/choose/zero/)
 * Flexslider is licensed under the terms of the GNU GPLv2; Source: http://www.woothemes.com/flexslider/
 * Google Font "Lato" is licensed under the SIL Open Font License, Version 1.1; Source: https://www.google.com/fonts/specimen/Lato
-* Genericons icon font, Copyright 2013 Automattic; Genericons are licensed under the terms of the GNU GPL, Version 2 (or later); Source: http://www.genericons.com
+* Genericons icon font, Copyright 2016 Automattic; Genericons are licensed under the terms of the GNU GPL, Version 2 (or later); Source: http://www.genericons.com
 
 == Installation ==
 
@@ -86,6 +83,90 @@ You can add links to a multitude of social services in the footer, using the fol
 * Custom header image should be at least 1092 in width.
 
 == Changelog ==
+
+= 3 March 2018 =
+* Use wp_kses_post rather than wp_filter_post_kses.
+
+= 23 February 2018 =
+* Simplify Headstart annotations.
+
+= 19 February 2018 =
+* Update menu flyout placement, so it will work with different font sizes.
+
+= 19 December 2017 =
+* Fix menu toggle icon rendering and alignment.
+
+= 27 September 2017 =
+* Update version number in preparation for .org submission.
+
+= 31 May 2017 =
+* Swap footer credit and social menu order in footer.php - the social menu was originally last, so any links to WordPress.com were screwing up the regex used for the custom footer credits.
+
+= 27 March 2017 =
+* Fix RTL portfolio spacing.
+
+= 22 March 2017 =
+* add Custom Colors annotations directly to the theme
+* move fonts annotations directly into the theme
+
+= 6 March 2017 =
+* Add Featured Content and Portfolio support to Headstart annotation.
+
+= 9 February 2017 =
+* Fixes typo when adding check for is_wp_error() in cases when using get_the_tag_list() to avoid potential fatal errors.
+* Check for is_wp_error() in cases when using get_the_tag_list() to avoid potential fatal errors.
+
+= 17 January 2017 =
+* Add new grid-layout tag to stylesheet.
+
+= 7 July 2016 =
+* Update text domain for eventbrite template pages
+* Let WordPress manage the document title by adding theme support
+
+= 29 June 2016 =
+* Update Headstart featured image URLs.
+
+= 22 June 2016 =
+* Fix Home menu position in annotation.
+
+= 21 June 2016 =
+* Correct annotation's page template setting.
+
+= 9 June 2016 =
+* Update Portfolio Featured Image function so it has the same style as Portfolio Title and Portfolio Content functions
+* Update Portfolio CPT with new theme option
+
+= 8 June 2016 =
+* Move Theme Options to the Portfolio tab in the Customizer
+* Add support for Portfolio CPT new feature
+
+= 12 May 2016 =
+* Add new classic-menu tag.
+
+= 5 May 2016 =
+* Move annotations into the `inc` directory.
+
+= 4 May 2016 =
+* Move existing annotations into their respective theme directories.
+
+= 22 April 2016 =
+* Add featured-content-with-pages tag to style.css and readme.txt.
+
+= 18 April 2016 =
+* Adjust z-index on header elements so DM links are not covered.
+
+= 12 April 2016 =
+* Update readme.txt.
+* Update screenshot.
+
+= 8 February 2016 =
+* Changing theme author to Automattic - to ensure that all our in-house themes have the same author.
+
+= 24 November 2015 =
+* Remove webkit appearance from input.
+
+= 6 November 2015 =
+* Add support for missing Genericons and update to 3.4.1.
 
 = 17 August 2015 =
 * Update readme text to include recent changes
@@ -250,35 +331,3 @@ You can add links to a multitude of social services in the footer, using the fol
 * Tweaks to heading styles; add support for Jetpack portfolios
 * Add Genericons support; add WP.com-specific styles; tweaks to portfolio appearance
 * Initial import to repo
-
-== 1.1.5 - Aug 16 2015 = 
-* Make sure new portfolio items are being appended to .portfolio-projects to avoid gaps.
-* Update Google fonts to use https.
-* Remove .screen-reader-text:hover and .screen-reader-text:active style rules.
-* Update flexslider to newest version, and update version number in functions.php.
-
-= 1.1.4 - Jun 25 2015 =
-* Update style for tag cloud widget.
-
-= 1.1.3 - May 6 2015 =
-* Update genericons
-
-= 1.1.2 - May 6 2015 =
-* Update genericons
-
-= 1.1.1 - March 4 2015 =
-* Improvements to header styles for mobile devices.
-
-= 1.1 - Nov 27 2014 =
-* Add support for the Eventbrite API plugin.
-
-= 1.0.3 - Nov 2 2014 =
-* Update Site Logo template tags for Jetpack.
-
-= 1.0.2 - September 8, 2014 =
-* Add attribution/licenses for bundled scripts/fonts to readme.txt as per review
-* Update screenshot
-* Minor style changes
-
-= 1.0 - August 14, 2014 =
-* Initial release.

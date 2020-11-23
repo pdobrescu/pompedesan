@@ -31,7 +31,7 @@
 		else
 			container.className += ' toggled';
 	};
-	
+
 	// Fix child menus for touch devices.
 	function fixMenuTouchTaps( container ) {
 		var touchStartFn,

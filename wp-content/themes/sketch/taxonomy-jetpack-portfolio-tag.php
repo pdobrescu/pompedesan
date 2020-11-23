@@ -1,8 +1,6 @@
 <?php
 /**
- * The template for displaying Archive pages for Portfolio items.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ * The template for displaying the Project Tag taxonomy archive page.
  *
  * @package Sketch
  */
@@ -14,18 +12,11 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php single_term_title(); ?>
-				</h1>
-				<?php
-					// Show an optional term description.
-					$term_description = term_description();
-					if ( ! empty( $term_description ) ) :
-						printf( '<div class="taxonomy-description">%s</div>', $term_description );
-					endif;
-				?>
-			</header><!-- .page-header -->
+			<?php sketch_portfolio_title( '<header class="page-header"><h1 class="page-title">', '</h1></header>' ); ?>
+
+			<?php sketch_portfolio_featured_image( '<div class="portfolio-featured-image">', '</div>' ); ?>
+
+			<?php sketch_portfolio_content( '<div class="portfolio-entry-content">', '</div>' ); ?>
 
 			<?php /* Start the Loop */ ?>
 
