@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-12-02 10:47:27+0000\n"
+"PO-Revision-Date: 2020-12-02 15:14:21+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -826,7 +826,7 @@ msgstr "Află mai multe despre setarea fără urmărire pe pagina noastră pentr
 #. translators: %s translates to the Post Label in singular form
 #: languages/wordpress-seojs.php:24
 msgid "Should search engines follow links on this %s"
-msgstr "Ar trebui ca motoarele de căutare să urmărească legăturile la această %s"
+msgstr "Ar trebui ca motoarele de căutare să urmărească legăturile la acest %s"
 
 #: src/presenters/admin/migration-error-presenter.php:59
 msgid "Show debug information"
